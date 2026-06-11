@@ -1,0 +1,119 @@
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+}
+
+.home-container {
+
+    min-height: 100vh;
+
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.overlay {
+
+    background: rgba(0,0,0,0.55);
+
+    min-height: 100vh;
+}
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 30px 60px;
+}
+
+.logo {
+
+    font-size: 40px;
+
+    font-weight: bold;
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 40px;
+}
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+.hero-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    height: 80vh;
+}
+
+.hero-section h1 {
+
+    font-size: 80px;
+
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+
+    font-size: 28px;
+
+    margin-bottom: 40px;
+}
+
+.explore-btn {
+
+    padding: 20px 45px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #00bfff;
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+
+    background: #009acd;
+}

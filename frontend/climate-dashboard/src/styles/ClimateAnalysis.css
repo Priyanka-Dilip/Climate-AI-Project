@@ -1,0 +1,318 @@
+.dashboard{
+
+  min-height:100vh;
+
+  padding:40px;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+  url("../assets/climate-bg.jpg");
+
+  background-size:cover;
+
+  background-position:center;
+
+  background-repeat:no-repeat;
+
+  color:white;
+}
+
+
+
+/* TITLE */
+
+.dashboard-title{
+
+  font-size:55px;
+
+  margin-bottom:35px;
+
+  font-weight:bold;
+}
+
+
+
+/* SEARCH */
+
+.search-container{
+
+  display:flex;
+
+  gap:20px;
+
+  align-items:flex-start;
+
+  margin-bottom:40px;
+}
+
+.search-container input{
+
+  width:420px;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:12px;
+
+  font-size:18px;
+
+  outline:none;
+}
+
+.search-container button{
+
+  padding:18px 35px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#38bdf8;
+
+  color:white;
+
+  font-size:18px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.search-container button:hover{
+
+  background:#0ea5e9;
+}
+
+
+
+/* SUGGESTIONS */
+
+.suggestion-box{
+
+  width:420px;
+
+  background:white;
+
+  color:black;
+
+  border-radius:12px;
+
+  margin-top:5px;
+
+  overflow:hidden;
+}
+
+.suggestion-item{
+
+  padding:14px;
+
+  cursor:pointer;
+
+  border-bottom:1px solid #ddd;
+}
+
+.suggestion-item:hover{
+
+  background:#f1f1f1;
+}
+
+
+
+/* WEATHER CARDS */
+
+.weather-container{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:25px;
+}
+
+.card{
+
+  background:rgba(0,0,0,0.5);
+
+  padding:28px;
+
+  border-radius:20px;
+
+  backdrop-filter:blur(5px);
+
+  transition:0.3s;
+}
+
+.card:hover{
+
+  transform:translateY(-5px);
+}
+
+.card h2{
+
+  margin-bottom:15px;
+
+  font-size:28px;
+}
+
+.card p{
+
+  font-size:26px;
+}
+
+
+
+/* FORECAST */
+
+.forecast-section{
+
+  margin-top:80px;
+}
+
+.forecast-title{
+
+  font-size:45px;
+
+  margin-bottom:30px;
+}
+
+.forecast-container{
+
+  display:flex;
+
+  gap:20px;
+
+  overflow-x:auto;
+
+  padding-bottom:10px;
+}
+
+.forecast-card{
+
+  min-width:220px;
+
+  background:rgba(0,0,0,0.5);
+
+  padding:25px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  backdrop-filter:blur(5px);
+
+  transition:0.3s;
+}
+
+.forecast-card:hover{
+
+  transform:scale(1.03);
+}
+
+.forecast-card img{
+
+  width:70px;
+
+  margin-top:10px;
+}
+
+.forecast-card h2{
+
+  margin:15px 0;
+}
+
+
+
+/* TREND ANALYSIS */
+
+.trend-section{
+
+  margin-top:100px;
+
+  padding-bottom:80px;
+}
+
+.trend-title{
+
+  font-size:45px;
+
+  margin-bottom:40px;
+}
+
+.chart-box{
+
+  background:rgba(0,0,0,0.5);
+
+  padding:30px;
+
+  border-radius:25px;
+
+  backdrop-filter:blur(5px);
+}
+
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+
+  height:8px;
+}
+
+::-webkit-scrollbar-thumb{
+
+  background:#38bdf8;
+
+  border-radius:20px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .weather-container{
+
+    grid-template-columns:1fr;
+  }
+
+  .search-container{
+
+    flex-direction:column;
+  }
+
+  .search-container input{
+
+    width:100%;
+  }
+
+  .suggestion-box{
+
+    width:100%;
+  }
+
+  .dashboard-title{
+
+    font-size:42px;
+  }
+
+  .forecast-title,
+  .trend-title{
+
+    font-size:35px;
+  }
+}
+.search-box{
+  position:relative;
+}
+
+.location-icon{
+  position:absolute;
+  right:15px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:22px;
+  cursor:pointer;
+  z-index:10;
+}

@@ -1,0 +1,9 @@
+backend/venv/
+backend/__pycache__/
+backend/model/__pycache__/
+backend/model/climate_model.h5
+frontend/climate-dashboard/node_modules/
+frontend/climate-dashboard/dist/
+
+.vscode/
+*.pyc
