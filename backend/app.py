@@ -59,7 +59,9 @@ recommendations = {
     "Freezing rain conditions detected. Roads may become slippery."
 }
 
-
+@app.route("/")
+def home():
+    return "Climate AI Backend is Running Successfully!"
 @app.route("/predict", methods=["POST"])
 def predict():
 
