@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
@@ -7,7 +7,7 @@ import WeatherAssistant from "./pages/WeatherAssistant";
 import About from "./pages/About";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -15,7 +15,7 @@ function App() {
         <Route path="/weather-assistant"element={<WeatherAssistant />}/>
         <Route path="/about"element={<About />}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -23,7 +23,12 @@ function Home() {
 
             <a href="/">Home</a>
 
-            <a href="/about"> About</a>
+            <button
+  className="start-btn"
+  onClick={() => navigate("/about")}
+>
+  About
+</button>
 
             <button
               className="start-btn"
